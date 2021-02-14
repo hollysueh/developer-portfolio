@@ -1,0 +1,21 @@
+{
+  "name": "developer-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "now-build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "10.0.5",
+    "react": "17.0.1",
+    "react-bootstrap": "1.4.3",
+    "react-dom": "17.0.1"
+  }
+}
