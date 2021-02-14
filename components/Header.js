@@ -11,20 +11,29 @@ const linkStyle = {
 }
 
 const Header = () => (
-    <div>
-        <Link href="/">
-          <a style={linkStyle}>Home</a>
-        </Link>
-        <Link href="/about">
-          <a style={linkStyle}>About</a>
-        </Link>
-        <Link href="/projects">
-          <a style={linkStyle}>Projects</a>
-        </Link>
-        <Link href="/contact">
-          <a style={linkStyle}>Contact</a>
-        </Link>
-    </div>
+  <div>
+    <Link href="/">
+      <a style={linkStyle}>Home</a>
+    </Link>
+    <Link href="/about">
+      <a style={linkStyle}>About</a>
+    </Link>
+    <Link href="/projects">
+      <a style={linkStyle}>Projects</a>
+    </Link>
+    <Link href="/contact">
+      <a style={linkStyle}>Contact</a>
+    </Link>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LTH6TCY0E"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0LTH6TCY0E');
+    </script>
+  </div>
 )
 
 export default Header
