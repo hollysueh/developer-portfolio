@@ -2,6 +2,15 @@ import Layout from '../components/MyLayout'
 
 export default () => (
 	<Layout>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LTH6TCY0E"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0LTH6TCY0E');
+    </script>
+    
     <br></br>
 	    <img src="/static/images/me1.jpg/" alt="my image" />
 			<h1>Hi, My Name's Holly</h1>
@@ -24,14 +33,5 @@ export default () => (
           padding: 5px;
         }
       `}</style>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LTH6TCY0E"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-0LTH6TCY0E');
-    </script>
   </Layout>
 )

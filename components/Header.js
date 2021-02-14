@@ -24,15 +24,6 @@ const Header = () => (
     <Link href="/contact">
       <a style={linkStyle}>Contact</a>
     </Link>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LTH6TCY0E"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-0LTH6TCY0E');
-    </script>
   </div>
 )
 

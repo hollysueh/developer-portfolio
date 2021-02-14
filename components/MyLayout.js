@@ -12,9 +12,6 @@ const layoutStyle = {
 		color: 'darkslategrey'
 }
 
-/* Notice in the example below that we pass children and title as props to the Layout components.
-If you remove {children}, the Layout cannot render the content we put inside the Layout element. 
-Have a look at ./pages/index.js to see where we pass props through to this Layout Component. */
 const Layout = (props) => (
    <div>
 	<Head>

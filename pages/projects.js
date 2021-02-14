@@ -3,6 +3,15 @@ import Link from 'next/link'
 
 export default () => (
   <Layout>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LTH6TCY0E"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0LTH6TCY0E');
+    </script>
+
     <h2><b>My Projects</b></h2>
     <hr></hr>
     <h4>Memory Book</h4>
@@ -42,14 +51,5 @@ export default () => (
           color: rgb(139, 103, 103);
         }
       `}</style>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LTH6TCY0E"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-0LTH6TCY0E');
-    </script>
 </Layout>
 )

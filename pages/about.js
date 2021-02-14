@@ -2,6 +2,15 @@ import Layout from '../components/MyLayout'
 
 export default () => (
   <Layout>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LTH6TCY0E"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0LTH6TCY0E');
+    </script>
+
     <h2><b>About Me</b></h2>
     <hr></hr>
     <h4>Intro</h4>
@@ -26,6 +35,7 @@ export default () => (
 		<p>(Aug 2017 - Dec 2018)</p>
     <p><b>Project Coordinator - </b><em> Auckland District Health Board (New Zealand)</em></p>
 		<p>(Nov 2016 - Jul 2017)</p>
+    
     <style jsx>{`
         h2 {
           margin-top: 35px;
@@ -36,15 +46,6 @@ export default () => (
           padding: 5px;
           color: rgb(139, 103, 103);
         }
-      `}</style>
-      
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LTH6TCY0E"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-0LTH6TCY0E');
-    </script>
+  `}</style>
 </Layout>
 )
