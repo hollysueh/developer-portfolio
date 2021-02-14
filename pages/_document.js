@@ -10,6 +10,7 @@ class MyDocument extends Document {
 
   render() {
     const GA_MEASUREMENT_ID = 'G-0LTH6TCY0E';
+    const GTM_ID = 'GTM-N5NHJ5X';
     return (
       <Html lang="en">
         <Head>
@@ -18,6 +19,7 @@ class MyDocument extends Document {
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           />
           <script
+            //Google Analytics
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{
               __html: `
@@ -27,6 +29,18 @@ class MyDocument extends Document {
                 gtag('config', '${GA_MEASUREMENT_ID}', {
                   page_path: window.location.pathname,
                 });
+              `,
+            }}
+          />
+
+          <script dangerouslySetInnerHTML={{
+            //Google Task Manager
+              __html:
+                `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','${GTM_ID}');
               `,
             }}
           />
@@ -44,5 +58,8 @@ export default MyDocument;
 
 /*
 REFERENCES:
-  https://wallis.dev/blog/nextjs-google-analytics
+  Google Analytics:
+    https://wallis.dev/blog/nextjs-google-analytics
+  Google Task Manager: 
+    https://stackoverflow.com/questions/60193714/gtm-with-nextjs
 */
