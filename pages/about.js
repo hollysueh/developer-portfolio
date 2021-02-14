@@ -2,15 +2,6 @@ import Layout from '../components/MyLayout'
 
 export default () => (
   <Layout>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LTH6TCY0E"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments)}
-      gtag('js', new Date());
-
-      gtag('config', 'G-0LTH6TCY0E');
-    </script>
-
     <h2><b>About Me</b></h2>
     <hr></hr>
     <h4>Intro</h4>
